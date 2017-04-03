@@ -4,6 +4,7 @@ This repo contains the base dockerfiles for building RavenDB(Server) Images.
 [![Docker Stars](https://img.shields.io/docker/stars/friendlyagent/ravendb.svg?style=flat)](https://hub.docker.com/r/friendlyagent/ravendb/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/friendlyagent/ravendb.svg?style=flat)](https://hub.docker.com/r/friendlyagent/ravendb/)
 [![Docker build](https://img.shields.io/docker/automated/friendlyagent/ravendb.svg?style=flat)](https://hub.docker.com/r/friendlyagent/ravendb/)
+
 # Supported tags and respective `Dockerfile` links
 |Version|Build|Tags|Base|Git|
 |:------------|:-------------|:-------------|:-------------|:-------------|
@@ -14,15 +15,15 @@ This repo contains the base dockerfiles for building RavenDB(Server) Images.
 
 # How to use this image
 `docker run -p 8080:8080 friendlyagent/ravendb`
-This will store the workspace in '/var/lib/ravendb'. All RavenDB data is contained within that workspace. **RavenDB will store the system and subsequent database(s) there.**
+This will store the workspace in `/var/lib/ravendb` all RavenDB data is contained within that workspace. **RavenDB will store the system and subsequent database(s) there.**
 
->**Note:** You will probably want to make that a persistent volume (recommended):
+>**Note:** You will probably want to make that a persistent volume (recommended).
 
 
 `docker run -p 8080:8080 -v /your/home:/var/lib/ravendb friendlyagent/ravendb`
 This will store the RavenDB data in `/your/home` on the host.
 
-## You can also use a volume container:
+## You can also use a volume container
 `docker run --name myravendb -p 8080:8080 -v /var/lib/ravendb friendlyagent/ravendb`
 Then myravendb container has the volume (please do read about docker volume handling to find out more).
 
@@ -39,5 +40,3 @@ You can use environment properties to manipulate the container (Example: `-e RAV
 ## Issues
 
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/FriendlyAgent/RavenDB.Docker/issues).
-
-
