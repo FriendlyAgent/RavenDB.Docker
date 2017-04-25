@@ -8,7 +8,8 @@ This repo contains the base dockerfiles for building RavenDB(Server) Images.
 # Supported tags and respective `Dockerfile` links
 |Version|Build|Tags|Base|Git|
 |:------------|:-------------|:-------------|:-------------|:-------------|
-|4.0.0-alpha|40012 |**40012**, **4.0.0-alpha-40012**, **latest**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40012/ubuntu "40012")|
+|4.0.0-alpha|40013 |**40013**, **4.0.0-alpha-40013**, **latest**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40013/ubuntu "40013")|
+|4.0.0-alpha|40012 |**40012**, **4.0.0-alpha-40012**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40012/ubuntu "40012")|
 |4.0.0-alpha|40010 |**40010**, **4.0.0-alpha-40010**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40010/ubuntu "40010")|
 |4.0.0-alpha|40009 |**40009**, **4.0.0-alpha-40009**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40009/ubuntu "40009")|
 |4.0.0-alpha|40008 |**40008**, **4.0.0-alpha-40008**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40008/ubuntu "40008")|
