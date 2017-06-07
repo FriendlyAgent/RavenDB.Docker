@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+echo "Pushing additional tags"
+imageName=$DOCKER_REPO":40014"
+docker tag $IMAGE_NAME $imageName
+docker push $imageName
+
+imageName=$DOCKER_REPO":4.0.0-beta-40014"
+docker tag $IMAGE_NAME $imageName
+docker push $imageName

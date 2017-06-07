@@ -8,7 +8,8 @@ This repo contains the base dockerfiles for building RavenDB(Server) Images.
 # Supported tags and respective `Dockerfile` links
 |Version|Build|Tags|Base|Git|
 |:------------|:-------------|:-------------|:-------------|:-------------|
-|4.0.0-alpha|40013 |**40013**, **4.0.0-alpha-40013**, **latest**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40013/ubuntu "40013")|
+|4.0.0-beta|40014 |**40014**, **4.0.0-beta-40014**, **latest**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40014/ubuntu "40014")|
+|4.0.0-alpha|40013 |**40013**, **4.0.0-alpha-40013**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40013/ubuntu "40013")|
 |4.0.0-alpha|40012 |**40012**, **4.0.0-alpha-40012**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40012/ubuntu "40012")|
 |4.0.0-alpha|40010 |**40010**, **4.0.0-alpha-40010**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40010/ubuntu "40010")|
 |4.0.0-alpha|40009 |**40009**, **4.0.0-alpha-40009**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40009/ubuntu "40009")|
@@ -31,7 +32,14 @@ Then myravendb container has the volume (please do read about docker volume hand
 
 ## Environment Variables
 You can use environment properties to manipulate the container (Example: `-e RAVEN_ServerUrl='http://0.0.0.0:9090'`)
+* RAVEN_Port: The port to use when creating the http listener.
+* RAVEN_ServerUrl: The URLs which the server should listen to.
+* RAVEN_TCP_Port: The TCP port to use when creating the tcp listener.
+* RAVEN_TCP_Url: The TCP URL which the server should listen to.
+* RAVEN_DataDir: The directory for the RavenDB resource.
+* RAVEN_AllowAnonymous: When set to true, exposes the database to the world.
 
+>**Note:** These are the environment properties for the alpha builds.
 * RAVEN_Port: The port to use when creating the http listener.
 * RAVEN_ServerUrl: The URLs which the server should listen to.
 * RAVEN_DataDir: The directory for the RavenDB resource.
