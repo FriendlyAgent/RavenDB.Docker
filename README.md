@@ -8,7 +8,8 @@ This repo contains the base dockerfiles for building RavenDB(Server) Images.
 # Supported tags and respective `Dockerfile` links
 |Version|Build|Tags|Base|Git|
 |:------------|:-------------|:-------------|:-------------|:-------------|
-|4.0.0-beta|40014 |**40014**, **4.0.0-beta-40014**, **latest**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40014/ubuntu "40014")|
+|4.0.0-beta|40016 |**40016**, **4.0.0-beta-40016**, **latest**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40016/ubuntu "40016")|
+|4.0.0-beta|40014 |**40014**, **4.0.0-beta-40014**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40014/ubuntu "40014")|
 |4.0.0-alpha|40013 |**40013**, **4.0.0-alpha-40013**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40013/ubuntu "40013")|
 |4.0.0-alpha|40012 |**40012**, **4.0.0-alpha-40012**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40012/ubuntu "40012")|
 |4.0.0-alpha|40010 |**40010**, **4.0.0-alpha-40010**|ubuntu:xenial|[RavenDB.Docker](https://github.com/FriendlyAgent/RavenDB.Docker/tree/master/40010/ubuntu "40010")|
@@ -44,6 +45,8 @@ You can use environment properties to manipulate the container (Example: `-e RAV
 * RAVEN_ServerUrl: The URLs which the server should listen to.
 * RAVEN_DataDir: The directory for the RavenDB resource.
 * RAVEN_EverybodyAsAdmin: When set to true, exposes the database to the world.
+* RAVEN_LogsMode: The settings used for logging {None, Operations(High level info for operational users), Information(Low level debug info)}.
+
 
 # User Feedback
 
