@@ -39,14 +39,13 @@ You can use environment properties to manipulate the container (Example: `-e RAV
 * RAVEN_TCP_Url: The TCP URL which the server should listen to.
 * RAVEN_DataDir: The directory for the RavenDB resource.
 * RAVEN_AllowAnonymous: When set to true, exposes the database to the world.
+* RAVEN_LogsMode: The settings used for logging {None, Operations(High level info for operational users), Information(Low level debug info)}.
 
 >**Note:** These are the environment properties for the alpha builds.
 * RAVEN_Port: The port to use when creating the http listener.
 * RAVEN_ServerUrl: The URLs which the server should listen to.
 * RAVEN_DataDir: The directory for the RavenDB resource.
 * RAVEN_EverybodyAsAdmin: When set to true, exposes the database to the world.
-* RAVEN_LogsMode: The settings used for logging {None, Operations(High level info for operational users), Information(Low level debug info)}.
-
 
 # User Feedback
 
